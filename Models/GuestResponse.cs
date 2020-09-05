@@ -10,6 +10,7 @@ namespace PartyInvites.Models
         public string Email { get; set; }
         [Required(ErrorMessage = "Please enter your phone number")]
         public string Phone { get; set; }
+        [Required(ErrorMessage = "Please enter your city")]
         public string City { get; set; }
         [Required(ErrorMessage = "Please specify whether you'll attend")]
         public bool? WillAttend { get; set; }
